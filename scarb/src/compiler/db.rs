@@ -50,6 +50,7 @@ fn load_plugins(
     for plugin_info in &unit.cairo_plugins {
         if plugin_info.builtin {
             let package_id = plugin_info.package.id;
+            println!("package_id: {:?}", package_id.name.to_string());
             let plugin = ws.config().cairo_plugins().fetch(package_id)?;
             let instance = plugin.instantiate()?;
             builder.with_plugin_suite(instance.plugin_suite());

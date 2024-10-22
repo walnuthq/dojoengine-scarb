@@ -1,6 +1,7 @@
 use anyhow::Result;
 use cairo_lang_compiler::db::RootDatabase;
 
+pub use compilers::ContractSelector;
 pub use compilation_unit::*;
 pub use profile::*;
 pub use repository::*;

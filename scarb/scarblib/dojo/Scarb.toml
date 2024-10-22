@@ -1,0 +1,6 @@
+[package]
+name = "dojo_plugin"
+version = "{{ CAIRO_VERSION }}"
+
+[cairo-plugin]
+builtin = true

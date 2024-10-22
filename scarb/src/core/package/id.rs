@@ -15,7 +15,7 @@ use crate::internal::to_version::ToVersion;
 #[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd, Hash)]
 pub struct PackageId(&'static PackageIdInner);
 
-#[derive(Eq, PartialEq, Ord, PartialOrd, Hash)]
+#[derive(Eq, PartialEq, Ord, PartialOrd, Hash, Debug)]
 #[non_exhaustive]
 pub struct PackageIdInner {
     pub name: PackageName,
