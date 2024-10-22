@@ -81,7 +81,6 @@ impl CairoPluginRepository {
     }
 
     pub fn get(&self, id: PackageId) -> Option<&dyn CairoPlugin> {
-        println!("getting plugin: {:?}", id);
         self.plugins.get(&id).map(AsRef::as_ref)
     }
 
