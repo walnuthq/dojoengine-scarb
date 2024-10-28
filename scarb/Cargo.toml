@@ -42,7 +42,7 @@ deno_task_shell.workspace = true
 derive_builder.workspace = true
 dialoguer.workspace = true
 directories.workspace = true
-dojo-lang = { git = "https://github.com/dojoengine/dojo", branch = "feat/dojo-1-rc0" }
+dojo-lang = { git = "https://github.com/dojoengine/dojo", rev = "0013815" }
 dunce.workspace = true
 fs4.workspace = true
 futures.workspace = true
