@@ -595,7 +595,7 @@ dependencies = [
 [[package]]
 name = "cainome"
 version = "0.4.6"
-source = "git+https://github.com/cartridge-gg/cainome?tag=v0.4.6#0c30f74923f68bced7380848148c22a8fc65075d"
+source = "git+https://github.com/cartridge-gg/cainome?rev=5c2616c273faca7700d2ba565503fcefb5b9d720#5c2616c273faca7700d2ba565503fcefb5b9d720"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -621,7 +621,7 @@ dependencies = [
 [[package]]
 name = "cainome-cairo-serde"
 version = "0.1.0"
-source = "git+https://github.com/cartridge-gg/cainome?tag=v0.4.6#0c30f74923f68bced7380848148c22a8fc65075d"
+source = "git+https://github.com/cartridge-gg/cainome?rev=5c2616c273faca7700d2ba565503fcefb5b9d720#5c2616c273faca7700d2ba565503fcefb5b9d720"
 dependencies = [
  "serde",
  "starknet",
@@ -631,7 +631,7 @@ dependencies = [
 [[package]]
 name = "cainome-cairo-serde-derive"
 version = "0.1.0"
-source = "git+https://github.com/cartridge-gg/cainome?tag=v0.4.6#0c30f74923f68bced7380848148c22a8fc65075d"
+source = "git+https://github.com/cartridge-gg/cainome?rev=5c2616c273faca7700d2ba565503fcefb5b9d720#5c2616c273faca7700d2ba565503fcefb5b9d720"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -642,7 +642,7 @@ dependencies = [
 [[package]]
 name = "cainome-parser"
 version = "0.1.0"
-source = "git+https://github.com/cartridge-gg/cainome?tag=v0.4.6#0c30f74923f68bced7380848148c22a8fc65075d"
+source = "git+https://github.com/cartridge-gg/cainome?rev=5c2616c273faca7700d2ba565503fcefb5b9d720#5c2616c273faca7700d2ba565503fcefb5b9d720"
 dependencies = [
  "convert_case",
  "quote",
@@ -655,7 +655,7 @@ dependencies = [
 [[package]]
 name = "cainome-rs"
 version = "0.1.0"
-source = "git+https://github.com/cartridge-gg/cainome?tag=v0.4.6#0c30f74923f68bced7380848148c22a8fc65075d"
+source = "git+https://github.com/cartridge-gg/cainome?rev=5c2616c273faca7700d2ba565503fcefb5b9d720#5c2616c273faca7700d2ba565503fcefb5b9d720"
 dependencies = [
  "anyhow",
  "cainome-cairo-serde",
@@ -673,7 +673,7 @@ dependencies = [
 [[package]]
 name = "cainome-rs-macro"
 version = "0.1.0"
-source = "git+https://github.com/cartridge-gg/cainome?tag=v0.4.6#0c30f74923f68bced7380848148c22a8fc65075d"
+source = "git+https://github.com/cartridge-gg/cainome?rev=5c2616c273faca7700d2ba565503fcefb5b9d720#5c2616c273faca7700d2ba565503fcefb5b9d720"
 dependencies = [
  "anyhow",
  "cainome-cairo-serde",
@@ -1912,7 +1912,7 @@ checksum = "fea41bba32d969b513997752735605054bc0dfa92b4c56bf1189f2e174be7a10"
 [[package]]
 name = "dojo-lang"
 version = "1.0.0-alpha.19"
-source = "git+https://github.com/dojoengine/dojo?rev=0013815#00138159cced62bb7f350a747695d1fdce4a7a8d"
+source = "git+https://github.com/dojoengine/dojo?rev=5a6afe3cf41ca6ddef1594513ea0148fd89cfdd8#5a6afe3cf41ca6ddef1594513ea0148fd89cfdd8"
 dependencies = [
  "anyhow",
  "cairo-lang-compiler",
@@ -1949,7 +1949,7 @@ dependencies = [
 [[package]]
 name = "dojo-types"
 version = "1.0.0-alpha.19"
-source = "git+https://github.com/dojoengine/dojo?rev=0013815#00138159cced62bb7f350a747695d1fdce4a7a8d"
+source = "git+https://github.com/dojoengine/dojo?rev=5a6afe3cf41ca6ddef1594513ea0148fd89cfdd8#5a6afe3cf41ca6ddef1594513ea0148fd89cfdd8"
 dependencies = [
  "anyhow",
  "cainome",
