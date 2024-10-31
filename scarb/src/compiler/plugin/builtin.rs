@@ -129,3 +129,24 @@ impl CairoPluginInstance for BuiltinTestAssertsPluginInstance {
         test_assert_suite()
     }
 }
+
+impl CairoPlugin for dojo_lang::BuiltinDojoPlugin {
+    fn id(&self) -> PackageId {
+        PackageId::new(
+            PackageName::new(dojo_lang::DOJO_PLUGIN_PACKAGE_NAME),
+            crate::version::get().cairo.version.to_version().unwrap(),
+            SourceId::for_std(),
+        )
+    }
+
+    fn instantiate(&self) -> Result<Box<dyn CairoPluginInstance>> {
+        Ok(Box::new(BuiltinDojoPluginInstance))
+    }
+}
+
+struct BuiltinDojoPluginInstance;
+impl CairoPluginInstance for BuiltinDojoPluginInstance {
+    fn plugin_suite(&self) -> PluginSuite {
+        dojo_lang::dojo_plugin_suite()
+    }
+}

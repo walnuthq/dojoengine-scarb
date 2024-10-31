@@ -9,7 +9,7 @@ use itertools::Itertools;
 use serde::{Deserialize, Serialize};
 
 use crate::compiler::plugin::builtin::BuiltinCairoRunPlugin;
-use crate::core::{Package, PackageId, TargetKind, Workspace};
+use crate::core::{Package, PackageId, PackageName, SourceId, TargetKind, Workspace};
 
 use self::builtin::{BuiltinStarkNetPlugin, BuiltinTestPlugin};
 
@@ -66,6 +66,7 @@ impl CairoPluginRepository {
         repo.add(Box::new(BuiltinTestPlugin)).unwrap();
         repo.add(Box::new(BuiltinCairoRunPlugin)).unwrap();
         repo.add(Box::new(BuiltinTestAssertsPlugin)).unwrap();
+        repo.add(Box::new(dojo_lang::BuiltinDojoPlugin)).unwrap();
         repo
     }
 
@@ -84,6 +85,17 @@ impl CairoPluginRepository {
     }
 
     pub fn fetch(&self, id: PackageId) -> Result<&dyn CairoPlugin> {
+        // Dojo is added as std until proc macro are fully supported.
+        let id = if id.name.to_string() == dojo_lang::DOJO_PLUGIN_PACKAGE_NAME {
+            PackageId::new(
+                PackageName::new(dojo_lang::DOJO_PLUGIN_PACKAGE_NAME),
+                id.version.clone(),
+                SourceId::for_std(),
+            )
+        } else {
+            id
+        };
+
         self.get(id)
             .ok_or_else(|| anyhow!("compiler plugin could not be loaded `{id}`"))
     }

@@ -70,10 +70,10 @@ pub enum SerdeListSelector {
 }
 
 #[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
-pub struct ContractSelector(String);
+pub struct ContractSelector(pub String);
 
 impl ContractSelector {
-    fn package(&self) -> PackageName {
+    pub fn package(&self) -> PackageName {
         let parts = self
             .0
             .split_once(CAIRO_PATH_SEPARATOR)
