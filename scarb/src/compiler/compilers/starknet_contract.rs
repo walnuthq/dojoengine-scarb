@@ -70,7 +70,7 @@ pub enum SerdeListSelector {
 }
 
 #[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
-struct ContractSelector(String);
+pub struct ContractSelector(String);
 
 impl ContractSelector {
     fn package(&self) -> PackageName {
