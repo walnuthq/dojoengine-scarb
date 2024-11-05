@@ -1911,8 +1911,8 @@ checksum = "fea41bba32d969b513997752735605054bc0dfa92b4c56bf1189f2e174be7a10"
 
 [[package]]
 name = "dojo-lang"
-version = "1.0.0-rc.0"
-source = "git+https://github.com/dojoengine/dojo?rev=479b698def87b004ecc074058182fac40d53d077#479b698def87b004ecc074058182fac40d53d077"
+version = "1.0.0-rc.1"
+source = "git+https://github.com/dojoengine/dojo?rev=6cfe004bde326c2e7fda309a6ea5fb24007ba414#6cfe004bde326c2e7fda309a6ea5fb24007ba414"
 dependencies = [
  "anyhow",
  "cairo-lang-compiler",
@@ -1948,8 +1948,8 @@ dependencies = [
 
 [[package]]
 name = "dojo-types"
-version = "1.0.0-rc.0"
-source = "git+https://github.com/dojoengine/dojo?rev=479b698def87b004ecc074058182fac40d53d077#479b698def87b004ecc074058182fac40d53d077"
+version = "1.0.0-rc.1"
+source = "git+https://github.com/dojoengine/dojo?rev=6cfe004bde326c2e7fda309a6ea5fb24007ba414#6cfe004bde326c2e7fda309a6ea5fb24007ba414"
 dependencies = [
  "anyhow",
  "cainome",
