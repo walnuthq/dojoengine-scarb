@@ -1912,7 +1912,7 @@ checksum = "fea41bba32d969b513997752735605054bc0dfa92b4c56bf1189f2e174be7a10"
 [[package]]
 name = "dojo-lang"
 version = "1.0.0-rc.1"
-source = "git+https://github.com/bengineer42/dojo?rev=e6bc73a#e6bc73a191f9d9fe19965a8c3c5abc077b6743ae"
+source = "git+https://github.com/bengineer42/dojo?rev=0bdcb48203ec0c0bcc5e98c8a0d3fb1db5b1f1cd#0bdcb48203ec0c0bcc5e98c8a0d3fb1db5b1f1cd"
 dependencies = [
  "anyhow",
  "cairo-lang-compiler",
@@ -1940,7 +1940,7 @@ dependencies = [
  "serde_with",
  "smol_str",
  "starknet",
- "starknet-crypto 0.7.2",
+ "starknet-crypto 0.7.3",
  "tempfile",
  "toml",
  "tracing",
@@ -1950,7 +1950,7 @@ dependencies = [
 [[package]]
 name = "dojo-types"
 version = "1.0.0-rc.1"
-source = "git+https://github.com/bengineer42/dojo?rev=e6bc73a#e6bc73a191f9d9fe19965a8c3c5abc077b6743ae"
+source = "git+https://github.com/bengineer42/dojo?rev=0bdcb48203ec0c0bcc5e98c8a0d3fb1db5b1f1cd#0bdcb48203ec0c0bcc5e98c8a0d3fb1db5b1f1cd"
 dependencies = [
  "anyhow",
  "cainome",
@@ -1962,7 +1962,7 @@ dependencies = [
  "serde",
  "serde_json",
  "starknet",
- "starknet-crypto 0.7.2",
+ "starknet-crypto 0.7.3",
  "strum",
  "strum_macros",
  "thiserror",
@@ -5758,7 +5758,7 @@ dependencies = [
  "starknet-accounts",
  "starknet-contract",
  "starknet-core",
- "starknet-crypto 0.7.2",
+ "starknet-crypto 0.7.3",
  "starknet-macros",
  "starknet-providers",
  "starknet-signers",
@@ -5773,7 +5773,7 @@ dependencies = [
  "async-trait",
  "auto_impl",
  "starknet-core",
- "starknet-crypto 0.7.2",
+ "starknet-crypto 0.7.3",
  "starknet-providers",
  "starknet-signers",
  "thiserror",
@@ -5809,7 +5809,7 @@ dependencies = [
  "serde_json_pythonic",
  "serde_with",
  "sha3",
- "starknet-crypto 0.7.2",
+ "starknet-crypto 0.7.3",
  "starknet-types-core",
 ]
 
@@ -5835,9 +5835,9 @@ dependencies = [
 
 [[package]]
 name = "starknet-crypto"
-version = "0.7.2"
+version = "0.7.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "60a5064173a8e8d2675e67744fd07f310de44573924b6b7af225a6bdd8102913"
+checksum = "ded22ccf4cb9e572ce3f77de6066af53560cd2520d508876c83bb1e6b29d5cbc"
 dependencies = [
  "crypto-bigint",
  "hex",
@@ -5937,7 +5937,7 @@ dependencies = [
  "getrandom",
  "rand",
  "starknet-core",
- "starknet-crypto 0.7.2",
+ "starknet-crypto 0.7.3",
  "thiserror",
 ]
 
