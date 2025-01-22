@@ -42,8 +42,9 @@ deno_task_shell.workspace = true
 derive_builder.workspace = true
 dialoguer.workspace = true
 directories.workspace = true
-dojo-lang = { git = "https://github.com/dojoengine/dojo", rev = "6725a8f20af56213fa7382aa1e158817f3ee623c" }
+#dojo-lang = { git = "https://github.com/dojoengine/dojo", rev = "6725a8f20af56213fa7382aa1e158817f3ee623c" }
 #dojo-lang = { path = "/Users/glihm/cgg/dojo/crates/dojo/lang" }
+dojo-lang = { path = "../../dojo/crates/dojo/lang/" }
 dunce.workspace = true
 fs4.workspace = true
 futures.workspace = true
@@ -62,7 +63,9 @@ ra_ap_toolchain.workspace = true
 redb.workspace = true
 reqwest.workspace = true
 scarb-build-metadata = { path = "../utils/scarb-build-metadata" }
-scarb-metadata = { path = "../scarb-metadata", default-features = false, features = ["builder"] }
+scarb-metadata = { path = "../scarb-metadata", default-features = false, features = [
+  "builder",
+] }
 scarb-stable-hash = { path = "../utils/scarb-stable-hash" }
 scarb-ui = { path = "../utils/scarb-ui" }
 semver.workspace = true
